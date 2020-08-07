@@ -4,30 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Nick's Portfolio</title>
 
         <!-- Css -->
         <link rel="stylesheet" href="/css/app.css">
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     </head>
-    <body>
+    <body class="font-sans">
        <div id="app">
-            <div class="mx-auto">
-                <header>
+            <div class="container mx-auto">
+                <header class="py-6">
                     <h1>Nicholas Seetaram</h1>
                 </header>
 
-                <main>
-                    <aside>
-                        <div class="primary">
-                            <router-link to="/">Home</router-link>
-                            <router-link to="/about">About</router-link>
-                        </div>
+                <main class="flex">
+                    <aside class="w-1/5">
+                        <ul>
+                            <li><router-link to="/">Home</router-link> </li>
+                              <li><router-link to="/about">About</router-link> </li>
+                        </ul>
                     </aside>
-                    <router-view></router-view>
+                    <div class="primary flex-1">
+                        <router-view></router-view>
+                    </div>
                 </main>
             </div>
        </div>
