@@ -16,15 +16,16 @@
     </head>
     <body class="font-sans">
        <div id="app">
-            <div class="container px-10">
-                <header class="py-6">
+                <header class="p-6 mb-8">
                     <img alt="laracasts" src="/images/logo.svg">
                 </header>
 
+            <div class="container px-8 pb-10">
+                
                 <main class="flex">
-                    <aside class="w-1/5">
-                        <section class="mb-8">
-                            <h5 class="uppercase font-bold mb-4">The Brand</h5>
+                    <aside class="md:w-72 pt-8">
+                        <section class="mb-10">
+                            <h5 class="uppercase font-bold mb-5 text-base">The Brand</h5>
                             <ul class="list-reset">
                             <li class="text-sm pb-4"><router-link class="text-black" to="/" exact>Logo</router-link> </li>
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/logo-symbol">Logo Symbol</router-link> </li>
@@ -34,7 +35,7 @@
                             </ul>
                         </section>
                         <section>
-                            <h5 class="uppercase font-bold mb-4">Doodles</h5>
+                            <h5 class="uppercase font-bold mb-5 text-base">Doodles</h5>
                             <ul class="list-reset">
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/mascot">Mascot</router-link> </li>
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/illustrations">Illustrations</router-link> </li>
