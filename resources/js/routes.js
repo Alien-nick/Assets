@@ -6,12 +6,17 @@ import Mascot from './components/Mascot';
 import Illustrations from './components/Illustrations';
 import LoadersAndAnimations from './components/LoadersAndAnimations';
 import Wallpaper from './components/Wallpaper';
+import NotFound from './components/NotFound';
 
 export default {
     mode: 'history',
     linkActiveClass: 'text-red-600',
 
     routes: [
+        {
+            path: '*',
+            component: NotFound
+        },
         {
             path: '/',
             component: Logo
