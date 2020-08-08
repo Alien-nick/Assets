@@ -9,6 +9,7 @@ import Wallpaper from './components/Wallpaper';
 
 export default {
     mode: 'history',
+    linkActiveClass: 'text-red-600',
 
     routes: [
         {
