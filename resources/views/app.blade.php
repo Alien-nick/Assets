@@ -24,7 +24,7 @@
                 
                 <main class="flex">
                     <aside class="md:w-72 pt-8">
-                        <section class="mb-10">
+                        <div class="mb-10">
                             <h5 class="uppercase font-bold mb-5 text-base">The Brand</h5>
                             <ul class="list-reset">
                             <li class="text-sm pb-4"><router-link class="text-black" to="/" exact>Logo</router-link> </li>
@@ -33,8 +33,8 @@
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/typography">Typography</router-link> </li>
 
                             </ul>
-                        </section>
-                        <section>
+                        </div>
+                        <div>
                             <h5 class="uppercase font-bold mb-5 text-base">Doodles</h5>
                             <ul class="list-reset">
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/mascot">Mascot</router-link> </li>
@@ -42,7 +42,13 @@
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/loaders-and-animations">Loaders and Animations</router-link> </li>
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/wallpaper">Wallpaper</router-link> </li>
                             </ul>
-                        </section>
+                        </div>
+                        <div>
+                            <h5 class="uppercase font-bold mb-5 text-base">Site Stats</h5>
+                            <ul class="list-reset">
+                                <li class="text-sm pb-4"><router-link class="text-black" to="/site-stats">Site Stats</router-link> </li>
+                            </ul>
+                        </div>
                     </aside>
                     <div class="primary flex-1">
                         <router-view></router-view>
