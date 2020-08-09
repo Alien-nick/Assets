@@ -4,9 +4,10 @@ import Colors from './components/Colors';
 import Typography from './components/Typography';
 import Mascot from './components/Mascot';
 import Illustrations from './components/Illustrations';
-import LoadersAndAnimations from './components/LoadersAndAnimations';
 import Wallpaper from './components/Wallpaper';
 import NotFound from './components/NotFound';
+import SiteStats from './components/SiteStats';
+let LoadersAndAnimations = () => import(/*  webpackChunkName: "loaders" */'./components/LoadersAndAnimations');
 
 export default {
     mode: 'history',
@@ -48,6 +49,10 @@ export default {
         {
             path: '/typography',
             component: Typography
+        },
+        {
+            path: '/site-stats',
+            component: SiteStats
         }
     ]
 }
